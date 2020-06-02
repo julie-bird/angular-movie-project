@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: rgb(15,9,28);
+background: linear-gradient(76deg, rgba(15,9,28,1) 0%, rgba(70,52,78,1) 100%);
+    font-family: 'Noto Sans', sans-serif;
+    color: #faed26;
+}
+
+p, img, div, button, body{
+    margin: 0;
+    padding:0;
+}
+
+.icon {
+    padding:2px;
+  }
+  
+a {
+    text-decoration:none;
+    color:black;
+    padding:10px;
+}
+a:visited { 
+    outline: none; 
+}

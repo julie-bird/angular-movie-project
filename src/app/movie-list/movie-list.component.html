@@ -1,0 +1,30 @@
+<div class="movies-container">
+  <div *ngFor="let movie of data; index as i" class="movie-content">
+    <div class="movie">
+      <a class="button-positioning">
+        <i class="fas fa-heart icon" (click)="addToWatchlist(movie)" [ngClass]="{hearted: movie.isClicked}"></i>
+      </a>
+      <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="movie poster" class="image main-image"
+        (click)="setShowIndex(i)" />
+    </div>
+
+
+    <div class="popup-container" *ngIf="showIndex==i">
+      <div class="popup">
+
+        <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="movie poster"
+          class="image popup-image" />
+        <div class="popup-writing">
+          <p class="title-text underline">{{ movie.original_title }}</p>
+          <p class="underline">{{movie.vote_average}} stars</p>
+          <p class="popup-overview">{{ movie.overview }}</p>
+        </div>
+        <div class="exit-div">
+          <a class="exit allbuttons"><i class="far fa-times-circle" (click)="removeShowIndex()"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
