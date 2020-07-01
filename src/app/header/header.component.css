@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
-    background-color: #5a5560;
+    background-color: rgba(27, 19, 34, 0.68);
 }
 .title {
     color: #faed26;
